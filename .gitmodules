@@ -1,3 +1,4 @@
 [submodule "personal-website"]
 	path = personal-website
 	url = https://github.com/tyng94/personal-website.git
+	branch = main
