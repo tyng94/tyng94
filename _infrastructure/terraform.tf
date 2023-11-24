@@ -1,5 +1,5 @@
 data "aws_s3_bucket" "terraform" {
-    bucket = "tyio-terraform"
+  bucket = "tyio-terraform"
 }
 
 resource "aws_s3_bucket_public_access_block" "terraform" {

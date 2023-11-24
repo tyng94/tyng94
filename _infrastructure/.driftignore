@@ -5,6 +5,4 @@ aws_iam_policy_attachment.AWSServiceRoleForSSO-arn:aws:iam::aws:policy/aws-servi
 aws_iam_policy_attachment.OrganizationAccountAccessRole-arn:aws:iam::aws:policy/AdministratorAccess
 aws_iam_role.AWSReservedSSO_AdministratorAccess_af715b08903859bf
 aws_iam_role.OrganizationAccountAccessRole
-aws_network_acl_rule.nacl-3115311911
-aws_network_acl_rule.nacl-3378163401
 aws_s3_bucket.tyio-terraform
