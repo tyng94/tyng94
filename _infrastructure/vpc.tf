@@ -24,7 +24,7 @@ resource "aws_default_subnet" "default_az_1c" {
   availability_zone = "ap-southeast-1c"
 
   tags = {
-    Name = "Default subnet for ap-southeast-1a"
+    Name = "Default subnet for ap-southeast-1c"
   }
 }
 
