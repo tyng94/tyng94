@@ -2,7 +2,7 @@ resource "aws_iam_openid_connect_provider" "default" {
   url = "https://token.actions.githubusercontent.com"
 
   client_id_list = [
-    "sts.amazonaws.com.",
+    "sts.amazonaws.com",
   ]
 
   thumbprint_list = ["1b511abead59c6ce207077c0bf0e0043b1382612"]
@@ -21,8 +21,10 @@ resource "aws_iam_role" "terraformer" {
         }
         Condition = {
           StringEquals = {
-            "${aws_iam_openid_connect_provider.default.url}:sub" = "repo:tyng94/tyng94",
             "${aws_iam_openid_connect_provider.default.url}:aud" : "sts.amazonaws.com"
+          }
+          StringLike = {
+            "${aws_iam_openid_connect_provider.default.url}:sub" : "repo:tyng94/tyng94:*"
           }
         }
       }
