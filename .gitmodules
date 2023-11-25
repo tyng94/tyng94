@@ -2,3 +2,7 @@
 	path = personal-website
 	url = https://github.com/tyng94/personal-website.git
 	branch = main
+[submodule "aws-deploy-webapp"]
+	path = aws-deploy-webapp
+	url = https://github.com/tyng94/aws-deploy-webapp
+	branch = main
